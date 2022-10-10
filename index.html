@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <title>
+        Assignment for the front end UI/UX
+        developer with some BO knowledge?
+    </title>
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+    <h1>Welcome to HiSave Gallery</h1>
+    <h6>Created by the Nitin Yadav!</h6>
+  
+    <div class="myProducts">
+        <div class="myProducts-gallery">
+            <img src="imag/rode.png.jpg"
+                alt="click here" 
+                onclick="myImageFunction(this)">
+            <img src="imag/Atal.png.jpg"
+                alt="click here"
+                onclick="myImageFunction(this)">
+            <img src="imag/Mountan.png.jpg"
+                alt="click here" 
+                onclick="myImageFunction(this)">
+            <img src="imag/treee.png.jpg"
+                alt="click here" 
+                onclick="myImageFunction(this)">
+        </div>
+  
+        <div class="image-container">
+            <img id="img-Box" src="https://picsum.photos/400/300"
+                alt="click here">
+        </div>
+    </div>
+  
+    <script>
+        function myImageFunction(productSmallImg) {
+            var productFullImg = document.getElementById("img-Box");
+            productFullImg.src = productSmallImg.src;
+        }
+    </script>
+    
+</body>
+<footer>
+    <p class="footr">Copyright Ny © 2022</p>
+</footer>
+  
+</html>
